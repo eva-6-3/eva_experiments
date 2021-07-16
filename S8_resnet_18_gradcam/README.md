@@ -5,6 +5,27 @@
 4. Udaya Kumar NAndhanuru - udaya.k@mistralsolutions.com
 ------
 
+## Train / Test model
+The model is trained using a training flow we created which can be found in this [repo](https://github.com/askmuhsin/eva_training_flow).   
+In order to train locally you can either run the the `train_model.ipynb` notebook or do the following steps.   
+1. clone the training flow rep -- 
+```bash
+git clone https://github.com/askmuhsin/eva_training_flow
+```
+2. Then run this script -- 
+```python
+from models import resnet_v2_6ch_ending     ## import model
+from main import Trainer
+from main import show_misclassification     ## utility to show misclassifications and gradcam
+
+trainer = Trainer(
+    resnet_v2_6ch_ending.ResNet18(),
+    # model_path='../data/model_state/R18_6_channel_with_augmentation_3_repeat.pt',     ## model path is optional, if required to resume training
+)
+trainer.train_model(epochs=40)  ## to start training
+show_misclassification(trainer) ## to view misclassifications
+```
+
 ## Gradcam Visuals
 
 
