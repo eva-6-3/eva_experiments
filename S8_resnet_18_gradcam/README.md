@@ -26,7 +26,22 @@ trainer.train_model(epochs=40)  ## to start training
 show_misclassification(trainer) ## to view misclassifications
 ```
 
-## Gradcam Visuals
+## Gradcam Visuals (Incorrect Classifications)
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_mistakes_1.png" width="400"/>
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_mistakes_2.png" width="400"/>
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_mistakes_3.png" width="400"/>
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_mistakes_4.png" width="400"/>
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_mistakes_5.png" width="400"/>
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_mistakes_6.png" width="400"/>
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_mistakes_7.png" width="400"/>
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_mistakes_8.png" width="400"/>
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_mistakes_9.png" width="400"/>
+
+
+## Gradcam Visuals (Correct Classifications)
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_correct_1.png" width="400"/>
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_correct_2.png" width="400"/>
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/sample_correct_3.png" width="400"/>
 
 
 ## Model Summary
