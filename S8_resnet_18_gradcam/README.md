@@ -193,3 +193,29 @@ TEST         Loss:0.0046         Acc:84.47         [8447 / 10000]
 TRAIN Epoch:39 Loss:0.2441 Batch:390 Acc:93.90: 100%|██████████| 391/391 [00:36<00:00, 10.57it/s]
 TEST         Loss:0.0051         Acc:83.33         [8333 / 10000]
 ```
+
+## Augmentations
+we applied the folowing augmentations --
+```python
+A.Compose([
+    A.Normalize(
+        mean=self.mean, 
+        std=self.std,
+        always_apply=True
+    ),
+    A.RandomCrop(32, 32, always_apply=False, p=0.5),
+    A.CoarseDropout(
+        max_holes=3, max_height=16, max_width=16, min_holes=None, min_height=None, min_width=None, 
+        fill_value=(0.491, 0.482, 0.447), mask_fill_value=None, always_apply=False, p=0.25
+    ),
+    A.Rotate(limit=5, interpolation=1, border_mode=4, value=None, mask_value=None, always_apply=False, p=0.5),
+    ToTensorV2()
+])
+```
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/augmentations.png" width="400"/>
+
+
+## Model Experiments
+We tried out several models before finalizing on this one.   <br>
+We initially started out with a vanially Resnet which had 3 blocks and ended with a linear layer. Since we wanted to visualize using gradcam the last channel of the vanilla R18 network was not suitable it was 4X4. So we increased padding to obtain a 6X6 channel in the last conv layer. We also tried removing the linear layer and using only GAP. Here are the results for all model runs.
+
