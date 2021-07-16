@@ -1,3 +1,79 @@
+# Group: EVA6 - Group 3
+1. Muhsin Abdul Mohammed - muhsin@omnilytics.co 
+2. Nilanjana Dev Nath - nilanjana.dvnath@gmail.com
+3. Pramod Ramachandra Bhagwat - pramod@mistralsolutions.com
+4. Udaya Kumar NAndhanuru - udaya.k@mistralsolutions.com
+------
+
+## Gradcam Visuals
+
+
+## Model Summary
+```
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 28, 28]           1,728
+       BatchNorm2d-2           [-1, 64, 28, 28]             128
+            Conv2d-3           [-1, 64, 28, 28]          36,864
+       BatchNorm2d-4           [-1, 64, 28, 28]             128
+            Conv2d-5           [-1, 64, 28, 28]          36,864
+       BatchNorm2d-6           [-1, 64, 28, 28]             128
+        BasicBlock-7           [-1, 64, 28, 28]               0
+            Conv2d-8           [-1, 64, 28, 28]          36,864
+       BatchNorm2d-9           [-1, 64, 28, 28]             128
+           Conv2d-10           [-1, 64, 28, 28]          36,864
+      BatchNorm2d-11           [-1, 64, 28, 28]             128
+       BasicBlock-12           [-1, 64, 28, 28]               0
+           Conv2d-13          [-1, 128, 15, 15]          73,728
+      BatchNorm2d-14          [-1, 128, 15, 15]             256
+           Conv2d-15          [-1, 128, 15, 15]         147,456
+      BatchNorm2d-16          [-1, 128, 15, 15]             256
+           Conv2d-17          [-1, 128, 15, 15]           8,192
+      BatchNorm2d-18          [-1, 128, 15, 15]             256
+       BasicBlock-19          [-1, 128, 15, 15]               0
+           Conv2d-20          [-1, 128, 15, 15]         147,456
+      BatchNorm2d-21          [-1, 128, 15, 15]             256
+           Conv2d-22          [-1, 128, 15, 15]         147,456
+      BatchNorm2d-23          [-1, 128, 15, 15]             256
+       BasicBlock-24          [-1, 128, 15, 15]               0
+           Conv2d-25            [-1, 256, 9, 9]         294,912
+      BatchNorm2d-26            [-1, 256, 9, 9]             512
+           Conv2d-27            [-1, 256, 9, 9]         589,824
+      BatchNorm2d-28            [-1, 256, 9, 9]             512
+           Conv2d-29            [-1, 256, 9, 9]          32,768
+      BatchNorm2d-30            [-1, 256, 9, 9]             512
+       BasicBlock-31            [-1, 256, 9, 9]               0
+           Conv2d-32            [-1, 256, 9, 9]         589,824
+      BatchNorm2d-33            [-1, 256, 9, 9]             512
+           Conv2d-34            [-1, 256, 9, 9]         589,824
+      BatchNorm2d-35            [-1, 256, 9, 9]             512
+       BasicBlock-36            [-1, 256, 9, 9]               0
+           Conv2d-37            [-1, 512, 6, 6]       1,179,648
+      BatchNorm2d-38            [-1, 512, 6, 6]           1,024
+           Conv2d-39            [-1, 512, 6, 6]       2,359,296
+      BatchNorm2d-40            [-1, 512, 6, 6]           1,024
+           Conv2d-41            [-1, 512, 6, 6]         131,072
+      BatchNorm2d-42            [-1, 512, 6, 6]           1,024
+       BasicBlock-43            [-1, 512, 6, 6]               0
+           Conv2d-44            [-1, 512, 6, 6]       2,359,296
+      BatchNorm2d-45            [-1, 512, 6, 6]           1,024
+           Conv2d-46            [-1, 512, 6, 6]       2,359,296
+      BatchNorm2d-47            [-1, 512, 6, 6]           1,024
+       BasicBlock-48            [-1, 512, 6, 6]               0
+           Linear-49                   [-1, 10]           5,130
+================================================================
+Total params: 11,173,962
+Trainable params: 11,173,962
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 10.82
+Params size (MB): 42.63
+Estimated Total Size (MB): 53.45
+----------------------------------------------------------------
+```
+
 ## Training Log
 ```bash
 TRAIN Epoch:0 Loss:1.1223 Batch:390 Acc:45.72: 100%|██████████| 391/391 [00:35<00:00, 11.02it/s]
