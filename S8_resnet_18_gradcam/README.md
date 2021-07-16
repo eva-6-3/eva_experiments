@@ -219,3 +219,11 @@ A.Compose([
 We tried out several models before finalizing on this one.   <br>
 We initially started out with a vanially Resnet which had 3 blocks and ended with a linear layer. Since we wanted to visualize using gradcam the last channel of the vanilla R18 network was not suitable it was 4X4. So we increased padding to obtain a 6X6 channel in the last conv layer. We also tried removing the linear layer and using only GAP. Here are the results for all model runs.
 
+- Final Model log (one of the runs)
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/final_model.png" width="700"/>
+
+- Comparison of all trained models
+<img src="https://github.com/askmuhsin/eva_experiments/blob/main/S8_resnet_18_gradcam/resources/model_comparisons.png" width="700"/>
+
+_Note: we used wandb for logging experiments, but because of the credentials and other dependencies it is not included in the nb with the model training here._
+
