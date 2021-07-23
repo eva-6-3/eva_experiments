@@ -1,3 +1,16 @@
+- [COCO](#coco)
+  * [COCO dataset info](#coco-dataset-info)
+  * [COCO Annotation Data Format](#coco-annotation-data-format)
+      - [`images`](#-images-)
+      - [`annotations`](#-annotations-)
+      - [`categories`](#-categories-)
+  * [COCO Categories](#coco-categories)
+  * [Extract category mapping info from COCO annotations](#extract-category-mapping-info-from-coco-annotations)
+- [K-means for estimating anchor boxes](#k-means-for-estimating-anchor-boxes)
+  * [Exploring the Width and Height](#exploring-the-width-and-height)
+  * [Clusters plotted from K-means](#clusters-plotted-from-k-means)
+
+------
 # COCO
 
 ## COCO dataset info
@@ -88,7 +101,9 @@ rm -rf ./annotations
 
 
 # K-means for estimating anchor boxes
-The dataset used for K-means bbox estimation is [here]()
+The dataset used for K-means bbox estimation is [here](https://github.com/askmuhsin/eva_experiments/blob/main/S10_object_localization/Part_B/sample_coco.txt)
+![image](https://user-images.githubusercontent.com/8600096/126826009-3824c10f-d227-4289-a534-5888e2bf9eaa.png)
+
 
 ## Exploring the Width and Height 
 <img src="https://user-images.githubusercontent.com/8600096/126806991-9473c57d-6552-4ed3-88d6-eeb0bf2060d2.png" width="400" height="300"/> <img src="https://user-images.githubusercontent.com/8600096/126807050-9fdfa728-331d-4279-9954-80abd0335a14.png" width="400" height="300"/>
