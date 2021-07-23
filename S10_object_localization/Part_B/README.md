@@ -110,6 +110,10 @@ The dataset used for K-means bbox estimation is [here](https://github.com/askmuh
 <img src="https://user-images.githubusercontent.com/8600096/126807106-a1ca9ec2-d525-46d0-b27d-5d7cdce29983.png" width="400" height="300"/> <img src="https://user-images.githubusercontent.com/8600096/126807171-199150e2-e87b-4d01-b915-61a5f1ac50d4.png" width="400" height="300"/>
 
 ## Clusters plotted from K-means
+The bounding boxes are found using k-means . and we have tried different values for k's (centroids). <br>
+the algo starts by random centroids, and then clusters each data points to the nearest cetroid, and then recalculates the cetroids until converging. <br>
+based on this approach we were able to find optimum anchor boxes we could use for the given dataset. <br>
+
 ![image](https://user-images.githubusercontent.com/8600096/126825398-702fa7b5-97c5-4b73-b599-786418f1c276.png)
 ```
 {3: array([[0.21808862, 0.23992734],
