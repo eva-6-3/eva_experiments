@@ -56,9 +56,9 @@ The classes are of regular everyday objects, animals so on. Broadly the categori
 Each super category can have several classes, for example super category - "vehicle" has bicycle, car, plane, bus, truck, train, boat. <br>
 This variety of classes makes COCO dataset quite userful in pretraining models for many real world applications. <br>
 You can find the category mapping [here](https://github.com/askmuhsin/eva_experiments/blob/main/S10_object_localization/Part_B/coco_category_mapping.json) <br>
-Here is a breakdown of the classes (from the 2017 Train/Val annotations file which can be downloaded from [here](https://cocodataset.org/#download)) -
+Here is a breakdown of the classes (from the 2017 Train/Val annotations file which can be downloaded from [here](https://cocodataset.org/#download)) - <br>
 ![image](https://user-images.githubusercontent.com/8600096/126772783-7d57c431-3d85-48f1-b1d1-cb2b8627bc69.png)
-As we can observe `person` is the most common class and 
+As we can observe `person` is the most common class. (6X more person images than `car` which is the next biggest class) <br> 
 ![image](https://user-images.githubusercontent.com/8600096/126773185-2c64171a-ca43-4c04-b309-0331d6e28132.png)
 
 
