@@ -1,3 +1,5 @@
+# COCO
+
 ## COCO dataset info
 Relevant information regarding COCO is available in the https://cocodataset.org/ page. <br>
 For the analysis we are using the [2017 Train/Val annotations](http://images.cocodataset.org/annotations/annotations_trainval2017.zip) _Note this file is 241MB_
@@ -83,3 +85,36 @@ _(To clean up)_
 rm ./annotations_trainval2014.zip
 rm -rf ./annotations
 ```
+
+
+# K-means for estimating anchor boxes
+The dataset used for K-means bbox estimation is [here]()
+
+## Exploring the Width and Height 
+<img src="https://user-images.githubusercontent.com/8600096/126806991-9473c57d-6552-4ed3-88d6-eeb0bf2060d2.png" width="400" height="300"/> <img src="https://user-images.githubusercontent.com/8600096/126807050-9fdfa728-331d-4279-9954-80abd0335a14.png" width="400" height="300"/>
+<img src="https://user-images.githubusercontent.com/8600096/126807106-a1ca9ec2-d525-46d0-b27d-5d7cdce29983.png" width="400" height="300"/> <img src="https://user-images.githubusercontent.com/8600096/126807171-199150e2-e87b-4d01-b915-61a5f1ac50d4.png" width="400" height="300"/>
+
+## Clusters plotted from K-means
+![image](https://user-images.githubusercontent.com/8600096/126825398-702fa7b5-97c5-4b73-b599-786418f1c276.png)
+```
+{3: array([[0.21808862, 0.23992734],
+        [0.47845166, 0.27415007],
+        [0.29415167, 0.49028161]]),
+ 4: array([[0.48039999, 0.27216026],
+        [0.2051795 , 0.38941535],
+        [0.2465304 , 0.18169721],
+        [0.38567446, 0.53267178]]),
+ 5: array([[0.3694134 , 0.52645624],
+        [0.19569039, 0.40160753],
+        [0.38165884, 0.23765644],
+        [0.18873836, 0.18674727],
+        [0.58115784, 0.31787939]]),
+ 6: array([[0.58733195, 0.34421703],
+        [0.17048974, 0.40305196],
+        [0.19006843, 0.19288712],
+        [0.40408074, 0.17250223],
+        [0.35610559, 0.35966085],
+        [0.33583787, 0.59193606]])}
+```
+
+
